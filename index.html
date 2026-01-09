@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Moment</title>
+  <title>Happy Moment — розважальні ігрові автомати</title>
 
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: #ffffff;
       color: #111;
       line-height: 1.6;
     }
 
     header {
-      padding: 24px 16px;
+      padding: 20px;
       text-align: center;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 1px solid #eee;
     }
 
     header img {
-      max-width: 140px;
-      margin-bottom: 12px;
+      max-width: 160px;
     }
 
     section {
-      padding: 32px 16px;
       max-width: 900px;
       margin: 0 auto;
+      padding: 40px 20px;
     }
 
     h1, h2 {
@@ -37,16 +35,21 @@
     }
 
     .price {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .note {
+    .price-note {
       text-align: center;
-      color: #555;
+      color: #666;
       font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      text-align: center;
     }
 
     .gallery img {
@@ -54,27 +57,26 @@
       height: auto;
       border-radius: 12px;
       margin: 20px 0;
-      display: block;
-    }
-
-    ul {
-      max-width: 600px;
-      margin: 0 auto;
     }
 
     footer {
-      background: #0b1a2a;
+      background: #0d1b2a;
       color: #fff;
-      padding: 32px 16px;
+      padding: 40px 20px;
       text-align: center;
-      margin-top: 40px;
     }
 
     footer a {
-      color: #7fb5ff;
+      color: #4da3ff;
+      text-decoration: none;
       display: block;
       margin: 6px 0;
-      text-decoration: none;
+    }
+
+    footer .company {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
     }
   </style>
 </head>
@@ -82,48 +84,31 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Happy Moment logo">
-  <h1>Happy Moment</h1>
-  <p>Розважальний сервіс у торгово-розважальних центрах</p>
+  <img src="logo.png" alt="Happy Moment">
 </header>
 
 <section>
-  <div class="price">20 гривень за одну ігрову спробу</div>
-  <div class="note">
-    Оплата здійснюється виключно за доступ до ігрового процесу.<br>
-    Результат гри не гарантується.
-  </div>
-</section>
-
-<section>
-  <h2>Про сервіс</h2>
-  <p>
-    Happy Moment — це розважальний сервіс, що надає доступ до призових
-    ігрових автоматів у торгово-розважальних центрах.
+  <h1>Розважальний сервіс Happy Moment</h1>
+  <p style="text-align:center;">
+    Надання доступу до призових ігрових автоматів у торгово-розважальних центрах.
   </p>
 </section>
 
 <section>
-  <h2>Послуги</h2>
-  <ul>
-    <li>Доступ до розважального ігрового обладнання</li>
-    <li>Інтерактивні механічні ігри</li>
-    <li>Розваги на координацію та швидкість реакції</li>
-    <li>Можливість отримання призів при успішній грі</li>
-  </ul>
+  <div class="price">20 гривень за одну ігрову спробу</div>
+  <div class="price-note">
+    Оплата здійснюється виключно за доступ до ігрового процесу.  
+    Результат гри не гарантується.
+  </div>
 </section>
 
 <section class="gallery">
   <h2>Галерея автоматів</h2>
 
-  <img 
-    src="machine.jpg.jpg"
-    alt="Призовий ігровий автомат Happy Moment"
-  >
+  <!-- ВАЖНО: файл machine.jpg повинен бути в корені -->
+  <img src="machine.jpg" alt="Призовий ігровий автомат Happy Moment">
 
-  <p style="text-align:center;">
-    Приклад призового розважального автомата
-  </p>
+  <p>Приклад призового розважального ігрового автомата</p>
 </section>
 
 <footer>
@@ -132,12 +117,12 @@
   <a href="offer.html">Договір публічної оферти</a>
   <a href="privacy.html">Політика конфіденційності</a>
 
-  <p style="margin-top:16px;">
+  <div class="company">
     © 2026 Happy Moment<br>
     ФОП Сєнько Едуард Олександрович<br>
     ІПН: 3728300939<br>
     Україна
-  </p>
+  </div>
 </footer>
 
 </body>
