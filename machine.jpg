@@ -1,0 +1,10 @@
+from PIL import Image
+
+src = "/mnt/data/C3C5835D-1F44-4EE8-A35E-4A0F2375258D.jpeg"
+dst = "/mnt/data/happy_moment_machine.jpg"
+
+img = Image.open(src)
+img = img.convert("RGB")
+img.save(dst, format="JPEG", quality=95)
+
+print(dst)
