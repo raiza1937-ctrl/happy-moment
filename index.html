@@ -1,122 +1,143 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Moment — розважальні ігрові автомати</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background: #ffffff;
-            color: #111;
-            line-height: 1.6;
-        }
-        header {
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-        header img {
-            max-width: 160px;
-        }
-        section {
-            padding: 30px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .price {
-            text-align: center;
-            font-size: 22px;
-            font-weight: bold;
-            margin: 20px 0 10px;
-        }
-        .note {
-            text-align: center;
-            color: #555;
-            font-size: 14px;
-        }
-        ul {
-            max-width: 600px;
-            margin: 20px auto;
-        }
-        .gallery {
-            text-align: center;
-        }
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 20px 0;
-        }
-        footer {
-            background: #0d1b2a;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-        footer a {
-            color: #4da3ff;
-            text-decoration: none;
-            display: block;
-            margin: 6px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Moment</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 16px;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    header img {
+      max-width: 140px;
+      margin-bottom: 12px;
+    }
+
+    section {
+      padding: 32px 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .note {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px 0;
+      display: block;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background: #0b1a2a;
+      color: #fff;
+      padding: 32px 16px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #7fb5ff;
+      display: block;
+      margin: 6px 0;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <img src="logo.png" alt="Happy Moment">
+  <img src="logo.png" alt="Happy Moment logo">
+  <h1>Happy Moment</h1>
+  <p>Розважальний сервіс у торгово-розважальних центрах</p>
 </header>
 
 <section>
-    <h1>Про сервіс</h1>
-    <p style="text-align:center;">
-        <strong>Happy Moment</strong> — це розважальний сервіс, що надає доступ
-        до призових ігрових автоматів у торгово-розважальних центрах.
-    </p>
-    <p style="text-align:center;">
-        Оплата здійснюється виключно за участь у розважальному ігровому процесі.
-        Результат гри не гарантується.
-    </p>
+  <div class="price">20 гривень за одну ігрову спробу</div>
+  <div class="note">
+    Оплата здійснюється виключно за доступ до ігрового процесу.<br>
+    Результат гри не гарантується.
+  </div>
 </section>
 
 <section>
-    <h2>Послуги</h2>
-    <ul>
-        <li>Доступ до розважального ігрового обладнання</li>
-        <li>Інтерактивні механічні ігри</li>
-        <li>Розваги на координацію та швидкість реакції</li>
-        <li>Можливість отримання призів при успішній ігровій дії</li>
-    </ul>
+  <h2>Про сервіс</h2>
+  <p>
+    Happy Moment — це розважальний сервіс, що надає доступ до призових
+    ігрових автоматів у торгово-розважальних центрах.
+  </p>
 </section>
 
 <section>
-    <div class="price">20 гривень за одну ігрову спробу</div>
-    <div class="note">
-        Оплата стягується виключно за доступ до ігрового процесу.
-    </div>
+  <h2>Послуги</h2>
+  <ul>
+    <li>Доступ до розважального ігрового обладнання</li>
+    <li>Інтерактивні механічні ігри</li>
+    <li>Розваги на координацію та швидкість реакції</li>
+    <li>Можливість отримання призів при успішній грі</li>
+  </ul>
 </section>
 
 <section class="gallery">
-    <h2>Галерея автоматів</h2>
-    <img src="machine.jpg.jpg" alt="Призовий ігровий автомат Happy Moment">
-    <p>Приклад призового розважального автомата</p>
+  <h2>Галерея автоматів</h2>
+
+  <img 
+    src="machine.jpg.jpg"
+    alt="Призовий ігровий автомат Happy Moment"
+  >
+
+  <p style="text-align:center;">
+    Приклад призового розважального автомата
+  </p>
 </section>
 
 <footer>
-    <div><strong>Юридична інформація</strong></div>
-    <a href="offer.html">Договір публічної оферти</a>
-    <a href="privacy.html">Політика конфіденційності</a>
-    <br>
-    <div>© 2026 Happy Moment</div>
-    <div>ФОП Сєнько Едуард Олександрович</div>
-    <div>ІПН: 3728300939</div>
-    <div>Україна</div>
+  <h3>Юридична інформація</h3>
+
+  <a href="offer.html">Договір публічної оферти</a>
+  <a href="privacy.html">Політика конфіденційності</a>
+
+  <p style="margin-top:16px;">
+    © 2026 Happy Moment<br>
+    ФОП Сєнько Едуард Олександрович<br>
+    ІПН: 3728300939<br>
+    Україна
+  </p>
 </footer>
 
 </body>
