@@ -7,47 +7,64 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #0f0f0f;
-    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
 }
 header {
     padding: 40px 20px;
     text-align: center;
-    background: #151515;
+    background: #0f172a;
+    color: #fff;
 }
 section {
-    padding: 30px 20px;
     max-width: 900px;
     margin: auto;
+    padding: 40px 20px;
 }
 h1, h2 {
-    color: #ffffff;
+    text-align: center;
 }
-p {
-    line-height: 1.6;
-    color: #dddddd;
-}
-.disclaimer {
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
     margin-top: 20px;
-    font-size: 14px;
-    color: #bbbbbb;
+}
+.subtitle {
+    text-align: center;
+    color: #555;
+}
+.gallery {
+    text-align: center;
+    margin-top: 30px;
+}
+.gallery img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 footer {
-    background: #151515;
-    padding: 20px;
+    background: #0f172a;
+    color: #fff;
+    padding: 30px 20px;
     text-align: center;
     font-size: 14px;
 }
 footer a {
-    color: #4da3ff;
+    color: #93c5fd;
     text-decoration: none;
-    margin: 0 6px;
+    display: block;
+    margin: 6px 0;
 }
 footer a:hover {
     text-decoration: underline;
+}
+.legal {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #cbd5f5;
 }
 </style>
 </head>
@@ -60,42 +77,6 @@ footer a:hover {
 </header>
 
 <section>
-    <h2>Про сервіс</h2>
-
-    <p>
-        Сервіс «Happy Moment» надає розважальні послуги шляхом використання інтерактивних
-        механічних пристроїв у публічних місцях.
-    </p>
-
-    <p>
-        Оплата здійснюється виключно за користування обладнанням та участь у
-        розважальному процесі. Сервіс не є азартною грою, лотереєю або букмекерською
-        діяльністю.
-    </p>
-
-    <p>
-        Результат користування обладнанням залежить від дій користувача та не гарантує
-        отримання будь-якого майна або матеріальної вигоди.
-    </p>
-
-    <p class="disclaimer">
-        Послуги надаються на території України, м. Київ.<br>
-        До користування сервісом допускаються особи, які досягли 18-річного віку.
-    </p>
-</section>
-
-<footer>
-    <p>
-        <a href="terms.html">Умови надання послуг</a> |
-        <a href="refund.html">Повернення коштів</a> |
-        <a href="privacy.html">Політика конфіденційності</a> |
-        <a href="contacts.html">Контакти</a>
-    </p>
-
-    <p style="margin-top:10px; color:#888888;">
-        © Happy Moment, Україна, м. Київ
-    </p>
-</footer>
-
-</body>
-</html>
+    <h2>Вартість</h2>
+    <div class="price">20 гривень за одну ігрову спробу</div>
+    <p class="subtitle
