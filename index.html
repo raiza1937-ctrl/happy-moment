@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Moment — Розважальний сервіс</title>
+<title>Happy Moment</title>
 
 <style>
 body {
@@ -12,55 +12,80 @@ body {
     background: #ffffff;
     color: #111;
 }
+
 header {
-    padding: 40px 20px;
+    background: #0b1220;
+    padding: 30px 20px;
     text-align: center;
-    background: #0f172a;
-    color: #fff;
 }
+
+header img {
+    max-width: 140px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 15px 0 5px;
+}
+
+header p {
+    color: #cbd5f5;
+    margin: 0;
+}
+
 section {
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
 }
-h1, h2 {
+
+h2 {
     text-align: center;
 }
+
 .price {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
 }
+
 .subtitle {
     text-align: center;
     color: #555;
+    margin-top: 10px;
 }
+
 .gallery {
     text-align: center;
     margin-top: 30px;
 }
+
 .gallery img {
     max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
 footer {
-    background: #0f172a;
-    color: #fff;
+    background: #0b1220;
+    color: #e5e7eb;
     padding: 30px 20px;
     text-align: center;
     font-size: 14px;
 }
+
 footer a {
     color: #93c5fd;
     text-decoration: none;
     display: block;
     margin: 6px 0;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
+
 .legal {
     margin-top: 20px;
     font-size: 13px;
@@ -72,6 +97,7 @@ footer a:hover {
 <body>
 
 <header>
+    <img src="logo.png" alt="Happy Moment">
     <h1>Happy Moment</h1>
     <p>Розважальний сервіс інтерактивних механічних пристроїв</p>
 </header>
@@ -79,4 +105,48 @@ footer a:hover {
 <section>
     <h2>Вартість</h2>
     <div class="price">20 гривень за одну ігрову спробу</div>
-    <p class="subtitle
+    <p class="subtitle">
+        Оплата здійснюється виключно за доступ до ігрового процесу.
+    </p>
+</section>
+
+<section>
+    <h2>Галерея автоматів</h2>
+    <div class="gallery">
+        <img src="machine.jpg" alt="Приклад розважального автомата">
+        <p class="subtitle" style="margin-top:15px;">
+            Приклад розважального механічного пристрою
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Про сервіс</h2>
+    <p style="text-align:center;">
+        Happy Moment — це розважальний сервіс, що надає доступ до інтерактивних
+        механічних пристроїв у торгово-розважальних центрах.
+    </p>
+    <p style="text-align:center;">
+        Оплата здійснюється виключно за участь у розважальному процесі.
+        Сервіс не є азартною грою, лотереєю або букмекерською діяльністю.
+        Результат користування обладнанням не гарантується.
+    </p>
+</section>
+
+<footer>
+    <a href="offer.html">Договір публічної оферти</a>
+    <a href="terms.html">Умови надання послуг</a>
+    <a href="refund.html">Повернення коштів</a>
+    <a href="privacy.html">Політика конфіденційності</a>
+    <a href="contacts.html">Контакти</a>
+
+    <div class="legal">
+        © 2026 Happy Moment<br>
+        ФОП Сенько Едуард Олександрович<br>
+        ІПН: 3728300939<br>
+        Україна, м. Київ
+    </div>
+</footer>
+
+</body>
+</html>
