@@ -1,157 +1,111 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Happy Moment — розважальний сервіс</title>
+    <title>Развлекательный призовой автомат</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Happy Moment — розважальний сервіс інтерактивних механічних пристроїв та продаж мʼяких іграшок.">
+
+    <!-- Описание для эквайринга -->
+    <meta name="description" content="Развлекательный сервис с призовыми автоматами. Оплата услуги участия в развлекательной активности.">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #333;
         }
+
         header {
-            background: linear-gradient(180deg, #0b1220, #111827);
+            background: #222;
             color: #fff;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 18px;
-            opacity: 0.85;
-        }
-        section {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 50px 20px;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 28px;
-        }
-        .price-box {
-            background: #fff;
-            border-radius: 8px;
-            padding: 40px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-        .price-box strong {
-            font-size: 36px;
-            display: block;
-            margin: 10px 0;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-        .product {
-            background: #fff;
-            border-radius: 8px;
             padding: 20px;
-            border: 1px solid #ddd;
+            text-align: center;
         }
-        .product img {
-            width: 100%;
-            border-radius: 6px;
-        }
-        .price {
-            font-weight: bold;
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        footer {
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
             background: #fff;
-            border-top: 1px solid #ddd;
-            padding: 30px 20px;
-            font-size: 14px;
+            padding: 25px;
+            border-radius: 10px;
         }
-        footer a {
-            color: #222;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .machine-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .buy-wrapper {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 16px 32px;
+            background-color: #ff9800;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
             text-decoration: none;
-            margin-right: 15px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #e68900;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin: 30px 0 10px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Happy Moment</h1>
-    <p>Розважальний сервіс інтерактивних механічних пристроїв</p>
+    <h1>Развлекательный призовой автомат</h1>
 </header>
 
-<section>
-    <h2>Вартість</h2>
-    <div class="price-box">
-        <p>Вартість доступу до розважального сервісу</p>
-        <strong>20 грн</strong>
-        <p>
-            Оплата здійснюється за розважальну послугу або товар.
-            Грошові виграші та азартні ігри відсутні.
-        </p>
-    </div>
-</section>
+<div class="container">
 
-<section class="gallery">
-    <h2>Галерея автоматів</h2>
-    <img src="machine.jpg" alt="Інтерактивний механічний пристрій Happy Moment">
-</section>
+    <!-- Фото автомата -->
+    <img src="machine.jpg" alt="Призовой автомат" class="machine-image">
 
-<section>
-    <h2>Товари</h2>
-    <p style="text-align:center;max-width:700px;margin:0 auto 30px;">
-        Ми також здійснюємо роздрібний продаж мʼяких іграшок з фіксованими цінами.
-        Оплата проводиться виключно за товар.
+    <p class="description">
+        Мы предоставляем услуги в сфере развлечений через призовые автоматы.
+        Пользователь оплачивает участие в развлекательной активности.
+        Сервис не является азартной игрой и не содержит элементов казино.
     </p>
 
-    <div class="products">
-        <div class="product">
-            <img src="myaka-igrashka-vedmedyk.jpg" alt="Мʼяка іграшка Ведмедик">
-            <h3>Мʼяка іграшка «Ведмедик»</h3>
-            <div class="price">299 грн</div>
-            <p>Самовивіз після оплати</p>
-        </div>
-
-        <div class="product">
-            <img src="myaka-igrashka-zaychyk.jpg" alt="Мʼяка іграшка Зайчик">
-            <h3>Мʼяка іграшка «Зайчик»</h3>
-            <div class="price">399 грн</div>
-            <p>Самовивіз після оплати</p>
-        </div>
-
-        <div class="product">
-            <img src="myaka-igrashka-kotyk.jpg" alt="Мʼяка іграшка Котик">
-            <h3>Мʼяка іграшка «Котик»</h3>
-            <div class="price">549 грн</div>
-            <p>Самовивіз після оплати</p>
-        </div>
+    <div class="buy-wrapper">
+        <!-- ССЫЛКУ ЗАМЕНИ НА СВОЮ -->
+        <a href="https://pay.example.com" class="buy-button" target="_blank">
+            Оплатить услугу
+        </a>
     </div>
-</section>
+
+</div>
 
 <footer>
-    <p>
-        <a href="offer.html">Публічна оферта</a>
-        <a href="terms.html">Умови використання</a>
-        <a href="privacy.html">Політика конфіденційності</a>
-        <a href="refund.html">Повернення коштів</a>
-        <a href="contacts.html">Контакти</a>
-    </p>
-    <p>
-        Happy Moment © Всі права захищено
-    </p>
+    © 2026 Развлекательный сервис. Все права защищены.
 </footer>
 
 </body>
