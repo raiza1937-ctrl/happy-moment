@@ -2,134 +2,156 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Продаж мʼяких іграшок</title>
+    <title>Happy Moment — розважальний сервіс</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Роздрібний продаж мʼяких дитячих іграшок. Фіксовані ціни. Самовивіз після оплати.">
+    <meta name="description" content="Happy Moment — розважальний сервіс інтерактивних механічних пристроїв та продаж мʼяких іграшок.">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f6f6f6;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
         }
         header {
-            background: #ffffff;
-            padding: 20px;
+            background: linear-gradient(180deg, #0b1220, #111827);
+            color: #fff;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.85;
         }
         section {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
-        h1, h2 {
-            margin-bottom: 10px;
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        .price-box {
+            background: #fff;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .price-box strong {
+            font-size: 36px;
+            display: block;
+            margin: 10px 0;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
         }
         .products {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
         .product {
             background: #fff;
+            border-radius: 8px;
             padding: 20px;
-            border-radius: 6px;
             border: 1px solid #ddd;
         }
         .product img {
             width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
+            border-radius: 6px;
         }
         .price {
-            font-size: 18px;
             font-weight: bold;
+            font-size: 18px;
             margin: 10px 0;
         }
         footer {
-            background: #ffffff;
+            background: #fff;
             border-top: 1px solid #ddd;
-            padding: 20px;
+            padding: 30px 20px;
             font-size: 14px;
         }
-        .legal {
-            max-width: 1100px;
-            margin: 0 auto;
-            line-height: 1.6;
+        footer a {
+            color: #222;
+            text-decoration: none;
+            margin-right: 15px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Мʼякі іграшки</h1>
-    <p>Роздрібний продаж товарів з фіксованими цінами</p>
+    <h1>Happy Moment</h1>
+    <p>Розважальний сервіс інтерактивних механічних пристроїв</p>
 </header>
 
 <section>
-    <h2>Каталог товарів</h2>
-    <p>
-        Ми здійснюємо роздрібний продаж мʼяких дитячих іграшок.
-        Оплата здійснюється виключно за товар.
+    <h2>Вартість</h2>
+    <div class="price-box">
+        <p>Вартість доступу до розважального сервісу</p>
+        <strong>20 грн</strong>
+        <p>
+            Оплата здійснюється за розважальну послугу або товар.
+            Грошові виграші та азартні ігри відсутні.
+        </p>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Галерея автоматів</h2>
+    <img src="machine.jpg" alt="Інтерактивний механічний пристрій Happy Moment">
+</section>
+
+<section>
+    <h2>Товари</h2>
+    <p style="text-align:center;max-width:700px;margin:0 auto 30px;">
+        Ми також здійснюємо роздрібний продаж мʼяких іграшок з фіксованими цінами.
+        Оплата проводиться виключно за товар.
     </p>
 
     <div class="products">
-
         <div class="product">
             <img src="myaka-igrashka-vedmedyk.jpg" alt="Мʼяка іграшка Ведмедик">
-            <h3>Мʼяка іграшка «Ведмедик класичний»</h3>
-            <p>Мʼяка дитяча іграшка з приємного текстилю, підходить для подарунків.</p>
-            <ul>
-                <li>Розмір: 25 см</li>
-                <li>Матеріал: текстиль</li>
-            </ul>
+            <h3>Мʼяка іграшка «Ведмедик»</h3>
             <div class="price">299 грн</div>
-            <p>Отримання: самовивіз у фізичній локації продавця після оплати.</p>
+            <p>Самовивіз після оплати</p>
         </div>
 
         <div class="product">
             <img src="myaka-igrashka-zaychyk.jpg" alt="Мʼяка іграшка Зайчик">
             <h3>Мʼяка іграшка «Зайчик»</h3>
-            <p>Декоративна мʼяка іграшка у вигляді зайчика, підходить як сувенір.</p>
-            <ul>
-                <li>Розмір: 30 см</li>
-                <li>Матеріал: плюш</li>
-            </ul>
             <div class="price">399 грн</div>
-            <p>Отримання: самовивіз у фізичній локації продавця після оплати.</p>
+            <p>Самовивіз після оплати</p>
         </div>
 
         <div class="product">
             <img src="myaka-igrashka-kotyk.jpg" alt="Мʼяка іграшка Котик">
             <h3>Мʼяка іграшка «Котик»</h3>
-            <p>Мʼяка іграшка у формі котика, приємна на дотик.</p>
-            <ul>
-                <li>Розмір: 35 см</li>
-                <li>Матеріал: текстиль</li>
-            </ul>
             <div class="price">549 грн</div>
-            <p>Отримання: самовивіз у фізичній локації продавця після оплати.</p>
+            <p>Самовивіз після оплати</p>
         </div>
-
     </div>
 </section>
 
 <footer>
-    <div class="legal">
-        <p><strong>Інформація про діяльність</strong></p>
-        <p>
-            Основний вид діяльності — роздрібний продаж мʼяких дитячих іграшок.
-            Продаж здійснюється виключно за товари.
-        </p>
-        <p>
-            Елементи азартних ігор, випадковості, грошових виграшів або ставок відсутні.
-        </p>
-        <p>
-            Контактна інформація надається за запитом.
-        </p>
-    </div>
+    <p>
+        <a href="offer.html">Публічна оферта</a>
+        <a href="terms.html">Умови використання</a>
+        <a href="privacy.html">Політика конфіденційності</a>
+        <a href="refund.html">Повернення коштів</a>
+        <a href="contacts.html">Контакти</a>
+    </p>
+    <p>
+        Happy Moment © Всі права захищено
+    </p>
 </footer>
 
 </body>
