@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Призовой развлекательный автомат</title>
+    <title>Мʼякі іграшки</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Развлекательный сервис с призовыми автоматами. Участие в развлекательной активности, получение сувенирных призов.">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
+            background: #f3f3f3;
             color: #333;
         }
 
         header {
-            background: #1f1f1f;
+            background: #1e1e1e;
             color: #fff;
             padding: 20px;
             text-align: center;
+        }
+
+        header img {
+            max-width: 140px;
+            margin-bottom: 10px;
         }
 
         .container {
@@ -34,26 +37,19 @@
             text-align: center;
         }
 
+        /* Фото автомата */
         .machine-image {
             width: 100%;
             max-width: 420px;
             display: block;
-            margin: 20px auto;
+            margin: 20px auto 40px;
         }
 
-        .description {
-            text-align: center;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        /* Игрушки */
+        /* Іграшки */
         .toys {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
-            margin-top: 20px;
         }
 
         .toy {
@@ -70,19 +66,9 @@
             object-fit: contain;
         }
 
-        .toy h3 {
-            margin: 10px 0 5px;
-        }
-
-        .toy p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        /* Кнопка */
         .buy-wrapper {
             text-align: center;
-            margin: 40px 0;
+            margin: 40px 0 10px;
         }
 
         .buy-button {
@@ -93,11 +79,6 @@
             font-weight: bold;
             border-radius: 10px;
             text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .buy-button:hover {
-            background: #e68900;
         }
 
         footer {
@@ -106,65 +87,62 @@
             color: #777;
             margin: 30px 0 10px;
         }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            margin: 0 8px;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Призовой развлекательный автомат</h1>
+    <img src="logo.png" alt="Логотип">
+    <h1>Мʼякі іграшки</h1>
 </header>
 
 <div class="container">
 
-    <!-- Фото автомата -->
-    <img src="machine.jpg" alt="Призовой автомат" class="machine-image">
+    <!-- ТІЛЬКИ ФОТО АВТОМАТА -->
+    <img src="machine.jpg" alt="Автомат" class="machine-image">
 
-    <p class="description">
-        Мы предоставляем услуги в сфере развлечений через призовые автоматы.
-        Пользователь оплачивает участие в развлекательной активности и получает
-        возможность выиграть сувенирные призы. Сервис не является азартной игрой.
-    </p>
-
-    <h2>🎁 Возможные призы</h2>
+    <h2>🎁 Іграшки</h2>
 
     <div class="toys">
         <div class="toy">
-            <img src="toy1.jpg" alt="Мягкая игрушка">
-            <h3>Мягкая игрушка</h3>
-            <p>Сувенирный приз</p>
+            <img src="myaka-igrashka-kotyk.jpg" alt="Котик">
+            <p>Мʼяка іграшка «Котик»</p>
         </div>
 
         <div class="toy">
-            <img src="toy2.jpg" alt="Фигурка">
-            <h3>Фигурка</h3>
-            <p>Коллекционный приз</p>
+            <img src="myaka-igrashka-vedmedyk.jpg" alt="Ведмедик">
+            <p>Мʼяка іграшка «Ведмедик»</p>
         </div>
 
         <div class="toy">
-            <img src="toy3.jpg" alt="Игрушка-сюрприз">
-            <h3>Игрушка-сюрприз</h3>
-            <p>Приз из автомата</p>
-        </div>
-
-        <div class="toy">
-            <img src="toy4.jpg" alt="Мини-плюш">
-            <h3>Мини-плюш</h3>
-            <p>Развлекательный приз</p>
+            <img src="myaka-igrashka-zaychyk.jpg" alt="Зайчик">
+            <p>Мʼяка іграшка «Зайчик»</p>
         </div>
     </div>
 
+    <!-- КНОПКА КУПИТИ -->
     <div class="buy-wrapper">
-        <!-- ЗАМЕНИ ССЫЛКУ -->
+        <!-- ВСТАВИ СВОЮ РЕАЛЬНУ ССИЛКУ НА ОПЛАТУ -->
         <a href="https://pay.example.com" class="buy-button" target="_blank">
-            Оплатить участие
+            Купити
         </a>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Развлекательный сервис. Все права защищены.
+    <a href="contacts.html">Контакти</a> |
+    <a href="offer.html">Оферта</a> |
+    <a href="terms.html">Умови</a> |
+    <a href="privacy.html">Конфіденційність</a> |
+    <a href="refund.html">Повернення</a>
 </footer>
 
 </body>
