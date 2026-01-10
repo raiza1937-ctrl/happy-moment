@@ -48,7 +48,7 @@
         /* Іграшки */
         .toys {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 20px;
         }
 
@@ -66,19 +66,38 @@
             object-fit: contain;
         }
 
+        .toy h3 {
+            margin: 10px 0 5px;
+        }
+
+        .toy p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
+        }
+
         .buy-wrapper {
             text-align: center;
-            margin: 40px 0 10px;
+            margin: 30px 0 10px;
         }
 
         .buy-button {
-            padding: 16px 36px;
+            padding: 14px 30px;
             background: #ff9800;
             color: #fff;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             border-radius: 10px;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
         }
 
         footer {
@@ -111,28 +130,31 @@
     <h2>🎁 Іграшки</h2>
 
     <div class="toys">
+
         <div class="toy">
             <img src="myaka-igrashka-kotyk.jpg" alt="Котик">
-            <p>Мʼяка іграшка «Котик»</p>
+            <h3>Мʼяка іграшка «Котик»</h3>
+            <p>Приємна на дотик мʼяка іграшка для дітей та дорослих.</p>
+            <div class="price">299 ₴</div>
+            <a href="https://pay.example.com" class="buy-button" target="_blank">Купити</a>
         </div>
 
         <div class="toy">
             <img src="myaka-igrashka-vedmedyk.jpg" alt="Ведмедик">
-            <p>Мʼяка іграшка «Ведмедик»</p>
+            <h3>Мʼяка іграшка «Ведмедик»</h3>
+            <p>Класичний мʼякий ведмедик — чудовий подарунок.</p>
+            <div class="price">349 ₴</div>
+            <a href="https://pay.example.com" class="buy-button" target="_blank">Купити</a>
         </div>
 
         <div class="toy">
             <img src="myaka-igrashka-zaychyk.jpg" alt="Зайчик">
-            <p>Мʼяка іграшка «Зайчик»</p>
+            <h3>Мʼяка іграшка «Зайчик»</h3>
+            <p>Мʼякий зайчик з приємним дизайном та якісних матеріалів.</p>
+            <div class="price">279 ₴</div>
+            <a href="https://pay.example.com" class="buy-button" target="_blank">Купити</a>
         </div>
-    </div>
 
-    <!-- КНОПКА КУПИТИ -->
-    <div class="buy-wrapper">
-        <!-- ВСТАВИ СВОЮ РЕАЛЬНУ ССИЛКУ НА ОПЛАТУ -->
-        <a href="https://pay.example.com" class="buy-button" target="_blank">
-            Купити
-        </a>
     </div>
 
 </div>
